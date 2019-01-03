@@ -1,0 +1,15 @@
+Use a color pallette to assign a color value to a file:
+
+	Option Compare Database
+	Public MyColor As Double
+
+	Private Sub Box1_Click()
+
+	MyColor = 16711680
+
+	Forms!CreateCharacter!Text26 = MyColor
+	Forms!CreateCharacter!Box23.BackColor = MyColor
+
+	DoCmd.Close
+
+	End Sub
